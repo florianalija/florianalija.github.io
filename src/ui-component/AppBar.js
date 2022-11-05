@@ -167,10 +167,20 @@ const AppBar = ({ ...others }) => {
                   sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'flex-end' }}
                 >
                   <Typography className={classes.tiktokIcon}>
-                    <TikTok />
+                    <IconButton
+                      sx={{ p: 0, m: 0 }}
+                      onClick={() => window.open('https://instagram.com/wubbushi?igshid=YmMyMTA2M2Y=', '_blank')}
+                    >
+                      <TikTok />
+                    </IconButton>
                   </Typography>
                   <Typography className={classes.instagramIcon}>
-                    <Instagram />
+                    <IconButton
+                      sx={{ p: 0, m: 0 }}
+                      onClick={() => window.open('https://instagram.com/wubbushi?igshid=YmMyMTA2M2Y=', '_blank')}
+                    >
+                      <Instagram />
+                    </IconButton>
                   </Typography>
                 </Typography>
               </Typography>
@@ -265,10 +275,24 @@ const AppBar = ({ ...others }) => {
                             sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'flex-start' }}
                           >
                             <Typography className={classes.tiktokIconMobile}>
-                              <TikTokMobile />
+                              <IconButton
+                                sx={{ p: 0, m: 0 }}
+                                onClick={() =>
+                                  window.open('https://instagram.com/wubbushi?igshid=YmMyMTA2M2Y=', '_blank')
+                                }
+                              >
+                                <TikTokMobile />
+                              </IconButton>
                             </Typography>
                             <Typography className={classes.instagramIconMobile}>
-                              <InstagramMobile />
+                              <IconButton
+                                sx={{ p: 0, m: 0 }}
+                                onClick={() =>
+                                  window.open('https://instagram.com/wubbushi?igshid=YmMyMTA2M2Y=', '_blank')
+                                }
+                              >
+                                <InstagramMobile />
+                              </IconButton>
                             </Typography>
                           </Typography>
                         </Grid>
