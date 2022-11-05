@@ -164,7 +164,7 @@ const AppBar = ({ ...others }) => {
                 <Typography
                   variant="subtitle1"
                   textAlign={'right'}
-                  sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'flex-end' }}
+                  sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'flex-end', pt: '10px' }}
                 >
                   <Typography className={classes.tiktokIcon}>
                     <IconButton
