@@ -123,7 +123,6 @@ const AppBar = ({ ...others }) => {
 
   const navigate = useNavigate();
   const location = useLocation();
-  console.log(location, 'loc');
   const classes = useStyles();
   const theme = useTheme();
   const matchesXs = useMediaQuery(theme.breakpoints.down('md'));
@@ -140,15 +139,14 @@ const AppBar = ({ ...others }) => {
 
   return (
     <ElevationScroll {...others}>
-      <MuiAppBar id="header" sx={{ position: 'relative' }}>
+      <MuiAppBar id="header" sx={{ position: 'relative', boxShadow: 'none' }}>
         <Container className={matchesXs ? classes.MuiContainerMaxWidthXs : classes.MuiContainerMaxWidthLg}>
           <Toolbar>
             <Typography component="div" sx={{ flexGrow: 1, textAlign: 'left', display: 'flex', flexDirection: 'row' }}>
-              {/* <Typography>Art</Typography> */}
               <Button
                 className={`${classes.headerTitle} ${activePath === '/art' && classes.activeMenu}`}
                 color="inherit"
-                onClick={() => navigate('/')}
+                onClick={() => navigate('/art')}
               >
                 Art
               </Button>
@@ -203,7 +201,7 @@ const AppBar = ({ ...others }) => {
                 <Box
                   sx={{
                     width: 'auto',
-                    backgroundColor: '#051717',
+                    backgroundColor: '#051717 !important',
                     height: '100% !important',
                   }}
                   role="presentation"
@@ -238,7 +236,7 @@ const AppBar = ({ ...others }) => {
                         <Grid item xs={12}>
                           <Button
                             className={`${classes.headerMobileMenu}  ${activePath === '/art' && classes.activeMenu}`}
-                            onClick={() => navigate('/')}
+                            onClick={() => navigate('/art')}
                           >
                             Art
                           </Button>
