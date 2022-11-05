@@ -196,6 +196,7 @@ const AppBar = ({ ...others }) => {
                 PaperProps={{
                   sx: {
                     height: '100% !important',
+                    backgroundColor: '#051717',
                   },
                 }}
               >
