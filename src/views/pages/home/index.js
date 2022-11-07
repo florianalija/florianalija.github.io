@@ -37,7 +37,7 @@ const Home = () => {
   return (
     <Box sx={{ minHeight: '100vh' }}>
       <AppBar />
-      <Grid container spacing={3} sx={{ backgroundColor: '#051717', paddingBottom: '70px' }}>
+      <Grid container spacing={3} sx={{ backgroundColor: '#051717', paddingBottom: matchesXs ? '25px' : '50px' }}>
         <Grid item xs={12}>
           <Avatar
             variant="square"
@@ -52,7 +52,7 @@ const Home = () => {
             direction="row"
             justifyContent="flex-end"
             spacing={3}
-            sx={{ paddingTop: matchesXs ? '450px' : '300px' }}
+            sx={{ paddingTop: matchesXs ? '150px' : '150px' }}
           >
             <Grid item xs={6} sm={6} md={3} lg={3} sx={{ display: 'flex', justifyContent: 'flex-end' }}>
               <Avatar
@@ -71,7 +71,11 @@ const Home = () => {
           </Grid>
         </Grid>
       </Grid>
-      <Footer />
+      <Grid container sx={{ paddingBottom: matchesXs ? '50px' : '150px' }}>
+        <Grid item xs={12}>
+          <Footer />
+        </Grid>
+      </Grid>
     </Box>
   );
 };
