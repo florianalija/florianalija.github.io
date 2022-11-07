@@ -37,7 +37,7 @@ const Home = () => {
   return (
     <Box sx={{ minHeight: '100vh' }}>
       <AppBar />
-      <Grid container spacing={3} sx={{ backgroundColor: '#051717', paddingBottom: matchesXs ? '25px' : '50px' }}>
+      <Grid container spacing={3} sx={{ backgroundColor: '#051717', paddingBottom: matchesXs ? '75px' : '50px' }}>
         <Grid item xs={12}>
           <Avatar
             variant="square"
@@ -71,7 +71,7 @@ const Home = () => {
           </Grid>
         </Grid>
       </Grid>
-      <Grid container sx={{ paddingBottom: matchesXs ? '50px' : '150px' }}>
+      <Grid container sx={{ paddingBottom: matchesXs ? '0px' : '150px' }}>
         <Grid item xs={12}>
           <Footer />
         </Grid>
